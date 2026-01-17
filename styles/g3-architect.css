@@ -19,6 +19,15 @@
     display: flex;
 }
 
+.btn{
+    background-color: #FF900E;
+    padding: 12px;
+    border-radius: 5%;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
 
 /* header-style */
 
@@ -55,4 +64,47 @@ header{
     font-size: 45px;
     font-weight: 600px;
     color: #131313;
+}
+
+/* banner-section */
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    width: 53%;
+    align-items: center;
+    padding-top: 102px;
+
+}
+.banner-content h2{
+    text-align: center;
+    font-size: 64px;
+    color: #131313;
+}
+
+.banner-content p{
+    text-align: center;
+    font-size: 16px;
+    color: #727272;
+    padding-top: 20px;
+
+}
+.banner-image{
+    max-width: 1000px;
+    max-height: 700px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+
+    
+}
+
+.button-1{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
