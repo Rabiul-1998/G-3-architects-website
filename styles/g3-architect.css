@@ -26,6 +26,7 @@
     border: none;
     color: white;
     cursor: pointer;
+    font-size: 1.25rem;
 }
 
 
@@ -36,33 +37,34 @@
 
 header{
     background-color: #ff8f0e24;
+    padding: 50px;
 }
 
 .navbar{
     
     justify-content: space-between;
     align-items: center;
-    max-width: 90%;
+    max-width: 1140%;
     margin: 0 auto;
 }
 
+.nav-links{
+    gap: 30px;
+}
 
 .nav-item{
     list-style: none;
-    margin-right: 30px;
-    
-    
 }
 .nav-item a{
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.25rem;
     color: #424242;
     
 }
 
 .brand-name{
-    font-size: 45px;
-    font-weight: 600px;
+    font-size: 2.5rem;
+    font-weight: 700;
     color: #131313;
 }
 
@@ -70,41 +72,54 @@ header{
 .banner{
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;     
 }
 
 .banner-content{
     display: flex;
     flex-direction: column;
-    width: 53%;
+    max-width: 1140px;
     align-items: center;
     padding-top: 102px;
 
 }
 .banner-content h2{
     text-align: center;
-    font-size: 64px;
+    font-size: 3rem;
     color: #131313;
 }
 
 .banner-content p{
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
     color: #727272;
     padding-top: 20px;
 
 }
-.banner-image{
-    max-width: 1000px;
-    max-height: 700px;
-    display: flex;
+.banner-image img{
+    /* max-width: 1440px;
+    max-height: 700px; */
+    /* display: flex;
     justify-content: center;
-    padding-bottom: 50px;
-
+    align-items: center;
+    padding-bottom: 50px; */
+    width: 100%;
+    height: auto;
     
 }
 
 .button-1{
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+/* responsive media query */
+
+@media screen and (max-width: 576px) {
+    .navbar, .nav-links{
+        flex-direction: column;
+    }
+    
 }
